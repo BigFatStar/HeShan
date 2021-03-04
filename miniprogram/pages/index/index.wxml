@@ -1,0 +1,46 @@
+<!-- 首页标题和搜索 -->
+<view class="wrap">
+  <view class="title_wrap">
+    <view class="location">
+      南昌
+      <van-icon name="location-o" />
+    </view>
+
+    <view class="title_info_wrap">
+      <view class="logo">
+        <van-image width="62rpx" height="62rpx" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+      </view>
+      <view class="title">朕策</view>
+    </view>
+
+    <view class="vip_wrap">
+      <van-icon name="gem-o" />
+      开通vip
+    </view>
+  </view>
+
+  <view class="search_wrap">
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" background="#eb4450" shape="round" />
+    <view class="hot_bot">
+      <text class="hot_bot_text">热搜:</text>
+      <swiper class="hot_bot_swiper" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}" vertical="true" circular="true">
+        <block wx:for="{{hotBotData}}" wx:for-item="itemOuter" wx:key="index">
+          <swiper-item>
+            <navigator wx:for="{{itemOuter}}" wx:for-item="itemInner" wx:key="*this">{{itemInner}}</navigator>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  
+</view>
+<!-- 弧形背景 -->
+<van-image width="100%" height="160rpx" src="/image/bg.png" />
+<!--  -->
+
+<!-- 底部导航栏 -->
+<van-tabbar active="{{ active }}" bind:change="onChange" active-color="#eb4450">
+  <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+  <van-tabbar-item icon="search">订阅</van-tabbar-item>
+  <van-tabbar-item icon="user-o">我的</van-tabbar-item>
+</van-tabbar>

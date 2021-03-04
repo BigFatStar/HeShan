@@ -1,0 +1,66 @@
+.wrap {
+  height: 240rpx;
+  background: var(--themeColor);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap .title_wrap {
+  flex: 2;
+  display: flex;
+}
+
+.wrap .title_wrap .location {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap .title_wrap .title_info_wrap {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap .title_wrap .title_info_wrap .title {
+  font-size: 48rpx;
+  margin-top: -18rpx;
+  margin-left: 16rpx;
+}
+
+.wrap .title_wrap .vip_wrap {
+  flex: 1;
+  font-size: 22rpx;
+  color: #ffcc66;
+}
+
+.wrap .title_wrap .vip_wrap .van-icon {
+  position: relative;
+  top: 5rpx;
+}
+
+.wrap .search_wrap {
+  flex: 3;
+}
+
+.wrap .search_wrap .hot_bot {
+  padding: 0 20rpx 20rpx;
+  display: flex;
+}
+
+.wrap .search_wrap .hot_bot .hot_bot_text {
+  flex: 1;
+}
+
+.wrap .search_wrap .hot_bot .hot_bot_swiper {
+  flex: 8;
+  height: 32rpx;
+}
+
+.wrap .search_wrap .hot_bot .hot_bot_swiper swiper-item {
+  display: flex;
+  justify-content: space-around;
+}

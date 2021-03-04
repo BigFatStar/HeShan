@@ -1,0 +1,58 @@
+.wrap{
+    height:240rpx;
+    background: var(--themeColor);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    .title_wrap{
+        flex:2;
+        display: flex;
+        .location{
+            flex:1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .title_info_wrap{
+            flex:3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .title{
+                font-size:48rpx;
+                margin-top: -18rpx;
+                margin-left:16rpx;
+            }
+        }
+        .vip_wrap{
+            flex:1;
+            font-size:22rpx;
+            color: #ffcc66;
+            .van-icon{
+                position: relative;
+                top:5rpx;
+            }
+        }
+    }
+    .search_wrap{
+        flex:3;
+        .hot_bot{
+            padding: 0 20rpx 20rpx;
+            display: flex;
+            .hot_bot_text{
+                flex:1;
+            }
+            .hot_bot_swiper{
+                flex:8;
+                height:32rpx;
+                swiper-item{
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}
+
+
+

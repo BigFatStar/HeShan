@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eb4450",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-tabbar": "./vant-weapp/dist/tabbar",
+    "van-tabbar-item": "./vant-weapp/dist/tabbar-item/index",
+    "van-button": "./vant-weapp/dist/button/index",
+    "van-icon": "./vant-weapp/dist/icon/index",
+    "van-image": "./vant-weapp/dist/image/index",
+    "van-search": "./vant-weapp/dist/search/index"
+  }
+}
