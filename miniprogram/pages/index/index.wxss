@@ -1,5 +1,5 @@
 .wrap {
-  height: 240rpx;
+  height: 220rpx;
   background: var(--themeColor);
   color: white;
   display: flex;

@@ -1,12 +1,34 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/subscription/index",
+    "pages/user/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#eb4450",
     "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/subscription/index",
+        "text": "订阅"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {

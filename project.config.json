@@ -39,7 +39,7 @@
   },
   "appid": "wx6530926d2f3534bf",
   "projectname": "HeShan",
-  "libVersion": "2.14.1",
+  "libVersion": "2.15.0",
   "condition": {
     "search": {
       "list": []
