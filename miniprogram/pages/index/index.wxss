@@ -1,7 +1,13 @@
+page {
+  background: #edece8;
+  margin-bottom: 100rpx;
+}
+
 .wrap {
-  height: 220rpx;
+  height: 240rpx;
   background: var(--themeColor);
   color: white;
+  padding-bottom: 40rpx;
   display: flex;
   flex-direction: column;
 }
@@ -63,4 +69,56 @@
 .wrap .search_wrap .hot_bot .hot_bot_swiper swiper-item {
   display: flex;
   justify-content: space-around;
+}
+
+.van-grid {
+  width: 710rpx;
+  margin: -80rpx auto 0;
+  border-radius: var(--borderRadius);
+}
+
+.policy_title {
+  margin: 20rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.policy_title .policy_title_text {
+  font-size: 40rpx;
+}
+
+.policy_title .policy_title_actions {
+  display: flex;
+  align-items: center;
+}
+
+.policy_tabs {
+  padding: 0 20rpx;
+}
+
+.policy_tabs .divider {
+  margin: 0;
+  color: #ffcc66;
+}
+
+.policy_tabs .policy_tab_actions {
+  margin-top: 20rpx;
+}
+
+.policy_tabs .policy_tab_actions .tag {
+  margin-right: 20rpx;
+}
+
+.policy_tabs .policy_tab_actions .text {
+  float: right;
+}
+
+.policy_tabs .van-tabs__wrap {
+  border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+}
+
+.policy_tabs .van-tabs__content {
+  border-radius: 0 0 var(--borderRadius) var(--borderRadius);
+  padding: 20rpx;
+  background: white;
 }

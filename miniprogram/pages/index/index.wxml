@@ -5,20 +5,17 @@
       南昌
       <van-icon name="location-o" />
     </view>
-
     <view class="title_info_wrap">
       <view class="logo">
         <van-image width="62rpx" height="62rpx" src="https://img.yzcdn.cn/vant/cat.jpeg" />
       </view>
       <view class="title">朕策</view>
     </view>
-
     <view class="vip_wrap">
       <van-icon name="gem-o" />
       开通vip
     </view>
   </view>
-
   <view class="search_wrap">
     <van-search value="{{ value }}" placeholder="请输入搜索关键词" background="#eb4450" shape="round" />
     <view class="hot_bot">
@@ -26,16 +23,48 @@
       <swiper class="hot_bot_swiper" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}" vertical="true" circular="true">
         <block wx:for="{{hotBotData}}" wx:for-item="itemOuter" wx:key="index">
           <swiper-item>
-            <navigator wx:for="{{itemOuter}}" wx:for-item="itemInner" wx:key="*this">{{itemInner}}</navigator>
+            <navigator wx:for="{{itemOuter}}" wx:for-item="itemInner" wx:key="*this">
+              {{itemInner}}
+            </navigator>
           </swiper-item>
         </block>
       </swiper>
     </view>
   </view>
-  
 </view>
 <!-- 弧形背景 -->
-<van-image width="100%" height="160rpx" src="/image/bg.png" />
-
+<van-image width="100%" height="40rpx" src="/image/bg.png" />
+<!-- grid菜单 -->
+<van-grid column-num="3" class="grid_bar">
+  <block wx:for="{{gridBarData}}" wx:key="text">
+    <van-grid-item icon="{{item.icon}}" url="{{item.url}}" text="{{item.text}}"></van-grid-item>
+  </block>
+</van-grid>
+<!-- 政策列表 -->
+<view class="policy_title">
+  <view class="policy_title_text">最新政策</view>
+  <view class="policy_title_actions">
+    更多
+    <van-icon name="arrow" />
+  </view>
+</view>
+<van-tabs custom-class="policy_tabs">
+  <van-tab title="全部" class="policy_tab">
+    <block wx:for="{{10}}" wx:key="*this">
+      <van-divider class="divider"></van-divider>
+      <view class="policy_tab_title van-multi-ellipsis--l2">
+        【市】 舒兰市七里乡新时代文明实践所助力乡村“七边”环境卫生治理行动
+      </view>
+      <view class="policy_tab_actions">
+        <van-tag plain round custom-class="tag">吉林市人民政府</van-tag>
+        <van-tag plain round custom-class="tag">政务动态</van-tag>
+        <text class="text">2021-03-07</text>
+      </view>
+    </block>
+  </van-tab>
+  <van-tab title="国级">国级</van-tab>
+  <van-tab title="省级">省级</van-tab>
+  <van-tab title="市级">市级</van-tab>
+</van-tabs>
 <!-- 底部导航栏 -->
 <custom-tab-bar />

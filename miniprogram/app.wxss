@@ -7,4 +7,5 @@ page {
 
   font-size: 24rpx;
   --themeColor: #eb4450;
+  --borderRadius: 16rpx;
 }

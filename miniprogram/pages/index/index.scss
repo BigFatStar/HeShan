@@ -1,58 +1,106 @@
-.wrap{
-    height:240rpx;
-    background: var(--themeColor);
-    color:white;
+page {
+  background: #edece8;
+  margin-bottom: 100rpx;
+}
+.wrap {
+  height: 240rpx;
+  background: var(--themeColor);
+  color: white;
+  padding-bottom: 40rpx;
+  display: flex;
+  flex-direction: column;
+  .title_wrap {
+    flex: 2;
     display: flex;
-    flex-direction: column;
-    .title_wrap{
-        flex:2;
-        display: flex;
-        .location{
-            flex:1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .title_info_wrap{
-            flex:3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .title{
-                font-size:48rpx;
-                margin-top: -18rpx;
-                margin-left:16rpx;
-            }
-        }
-        .vip_wrap{
-            flex:1;
-            font-size:22rpx;
-            color: #ffcc66;
-            .van-icon{
-                position: relative;
-                top:5rpx;
-            }
-        }
+    .location {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .search_wrap{
-        flex:3;
-        .hot_bot{
-            padding: 0 20rpx 20rpx;
-            display: flex;
-            .hot_bot_text{
-                flex:1;
-            }
-            .hot_bot_swiper{
-                flex:8;
-                height:32rpx;
-                swiper-item{
-                    display: flex;
-                    justify-content: space-around;
-                }
-            }
-        }
+    .title_info_wrap {
+      flex: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .title {
+        font-size: 48rpx;
+        margin-top: -18rpx;
+        margin-left: 16rpx;
+      }
     }
+    .vip_wrap {
+      flex: 1;
+      font-size: 22rpx;
+      color: #ffcc66;
+      .van-icon {
+        position: relative;
+        top: 5rpx;
+      }
+    }
+  }
+  .search_wrap {
+    flex: 3;
+    .hot_bot {
+      padding: 0 20rpx 20rpx;
+      display: flex;
+      .hot_bot_text {
+        flex: 1;
+      }
+      .hot_bot_swiper {
+        flex: 8;
+        height: 32rpx;
+        swiper-item {
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+}
+// 修改组件默认样式
+.van-grid {
+  width: 710rpx;
+  margin: -80rpx auto 0;
+  border-radius: var(--borderRadius);
 }
 
+// 政策标题
+.policy_title {
+  margin: 20rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+  .policy_title_text {
+    font-size: 40rpx;
+  }
+  .policy_title_actions {
+    display: flex;
+    align-items: center;
+  }
+}
 
-
+.policy_tabs {
+  padding: 0 20rpx;
+  .divider{
+      margin:0 ;
+      color:#ffcc66
+  }
+  .policy_tab_actions {
+    margin-top: 20rpx;
+    .tag {
+      margin-right: 20rpx;
+    }
+    .text {
+      float: right;
+    }
+  }
+  //   重置默认样式
+  .van-tabs__wrap{
+      border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+  }
+  .van-tabs__content {
+    border-radius: 0 0 var(--borderRadius) var(--borderRadius);
+    padding: 20rpx;
+    background: white;
+  }
+}

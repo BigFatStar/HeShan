@@ -45,7 +45,6 @@ Component({
       wx.switchTab({
         url: this.data.list[event.detail].pagePath,
       })
-      
     }
   }
 })
